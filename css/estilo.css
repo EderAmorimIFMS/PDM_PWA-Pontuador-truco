@@ -1,0 +1,49 @@
+header{
+    text-align: center;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.grupos{
+    display: flex;
+    align-items: center;
+}
+
+.grupo{
+    display: block;
+    border: 1px solid black;
+    /*width: 300px;*/
+    margin: 10px;
+}
+
+.controladores{
+    display: flex;
+    align-items: center;
+}
+
+.controlador{
+    display: block;
+    border: 1px solid black;
+    /*width: 300px;*/
+    margin: 10px;
+}
+
+#pontuar1, #pontuar2{
+  /*width: 300px;*/    font-size: 60px;
+    background-color:#00FF7F;
+}
+
+#retirar1, #retirar2{
+  /*width: 300px;*/   
+    font-size: 60px;
+    background-color:#FF6347;
+}
+
+
