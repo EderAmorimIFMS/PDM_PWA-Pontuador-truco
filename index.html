@@ -13,46 +13,36 @@
 </head>
 <body>
     <header>
-        <h1 className="titulo">Pontuador de Truco</h1>
+        <h1 class="titulo">Pontuador de Truco</h1>
     </header>
-    <div id="forms">
-      <input className="input" id="equipe1" type="text" placeholder="DIGITE O NOME DA PRIMEIRA EQUIPE/JOGADOR"/>
-      <input className="input" id="equipe2" type="text" placeholder="DIGITE O NOME DA SEGUNDA EQUIPE/JOGADOR"/>
-      <button onclick="Logar()">JOGAR</button>
-    </div>
-    
-    <hr/>
     
     <div class="container">
         <div class="grupos">
             <div class="grupo">
-            <h1 id="equipe_1"></h1>
-            <h1 id="vencedor1"></h1>
-
+            <h3>Equipe/Jogador 1</h3>
             <h2 id="ponto_1"></h2>
             </div>
 
             <div class="grupo">
-                <h1 id="equipe_2"></h1>
-
+                <h3>Equipe/Jogador 2</h3>
                 <h2 id="ponto_2"></h2>
             </div>
         </div>
 
         <div class="controladores">
             <div class="controlador">
-                <button className="pontuar" onclick="Ponto_equipe1()">+</button>
-                <button className="retirar" onclick="Retirar_equipe1()">-</button>
+                <button class="btn_pontuar" onclick="Ponto_equipe1()">+</button>
+                <button class="btn_retirar" onclick="Retirar_equipe1()">-</button>
             </div>
         
             <div class="controlador">
-                <button className="pontuar" onclick="Ponto_equipe2">+</button>
-                <button className="retirar" onclick="Retirar_equipe2">-</button>
+                <button class="btn_pontuar" onclick="Ponto_equipe2()">+</button>
+                <button class="btn_retirar" onclick="Retirar_equipe2()">-</button>
             </div>
         </div>
 
         <div class="trucar">
-            <button onclick="Trucar()">Truco<p id="valorPonto"></p></button>
+            <button class="bnt_trucar" onclick="Trucar()">Truco<p id="p_truco"></p></button>
         </div>
 </body>
 </html>

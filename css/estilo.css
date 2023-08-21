@@ -1,57 +1,100 @@
-header{
-  text-align: center;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    width: 100vw;
 }
 
-#forms{
-  display: block;
-  align-items: center;
-}
-
-input{
-  width: 300px;
-  height: 30px;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
+header {
+    background-color: black;
+    color: white;
     text-align: center;
-    align-items: center;
-
+    padding: 1rem;
+    width: 100%;
 }
+
+.container {
+    display: block;
+    padding: 2rem;
+    width: 92%;
+}
+
 
 .grupos{
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.grupo{
-    display: block;
-    border: 1px solid black;
-    /*width: 300px;*/
-    margin: 10px;
+.grupo {
+  display: block;
+  width: 44%;
+  height: 200px;
+  text-align: center;
+  margin: 0 5px 0 5px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.controladores{
-    display: flex;
-    align-items: center;
+.controladores {
+  display: flex;
+ }
+
+.controlador {
+  width: 44%;
+  display: flex;
+  margin: 0 10px 0 10px;
+  justify-content: space-bettween;
 }
 
-.controlador{
-    display: block;
-    border: 1px solid black;
-    /*width: 300px;*/
-    margin: 10px;
+.btn_pontuar {
+  background-color: #f0f0f0;
+  color: #00FF7F;
+  border: none;
+  cursor: pointer;
+  font-size: 100px;
+  margin: 0 10px 0 10px;
 }
 
-.pontuar {
-  /*width: 300px;*/   
-  font-size: 60px;
-  color:#00FF7F;
+.btn_retirar {
+  background-color: #f0f0f0;;
+  color: #FF6347;
+  border: none;
+  cursor: pointer;
+  font-size: 100px;
+  margin: 0 10px 0 10px;
 }
 
-.retirar{
-  /*width: 300px;*/   
-    font-size: 60px;
-    color:#FF6347;
+.btn_trucar {
+  background: white;
+  width: 100%;
+  text-align: center;
 }
+
+.btn_pontuar:hover {
+  color: green;
+  opacity: 0.8;
+}
+
+.btn_retirar:hover, 
+.btn_trucar:hover {
+  color: red;
+  opacity: 0.8;
+}
+
+.titulo {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/*h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 100px,;
+}*/
