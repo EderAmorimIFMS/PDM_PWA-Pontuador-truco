@@ -1,22 +1,26 @@
 {
   "name": "pdm_pontuador-truco",
   "version": "1.0.0",
-  "description": "Esta é a segunda atividade em dupla, construa um portuador de truco",
+  "description": "Esta é a seugunda atividade em dupla, construa um portuador de truco",
   "main": "index.html",
   "scripts": {
     "serve": "serve ."
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EderAmorimIFMS/PDM_Pontuador-truco.git"
   },
   "author": "Gemeos",
   "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.0",
+  },
   "bugs": {
     "url": "https://github.com/EderAmorimIFMS/PDM_Pontuador-truco/issues"
   },
-  "homepage": "https://github.com/EderAmorimIFMS/PDM_Pontuador-truco#readme",
-  "dependencies": {
-    "serve": "^14.2.0"
-  }
+  "homepage": "https://github.com/EderAmorimIFMS/PDM_Pontuador-truco#readme"
 }
+
+^X
+

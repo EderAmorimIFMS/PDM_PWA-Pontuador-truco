@@ -1,49 +1,57 @@
-const logar = document.getElementById("logar");
-logar.addEventListener("click", () => {
-    const equipe1 = document.getElementById("equipe1");
-    const equipe2 = document.getElementById("equipe2");
+let equipe_1, equipe_2;
+equipe_1 = document.getElementById("equipe_1");
+equipe_2 = document.getElementById("equipe_2");
 
-    const jogador1 = document.getElementById("jogador1")
-    const jogador2 = document.getElementById("jogador2")
+let pontos_equipe1, pontos_equipe2;
+pontos_equipe1 = parseFloat(document.getElementById("ponto_1"));
+pontos_equipe2 = parseFloat(document.getElementById("ponto_2"));
 
-    jogador1.innerHTML = equipe1.value
-    jogador2.innerHTML = equipe2.value
-});
+let valorDoPonto = document.getElementById("valorPonto");
+valorPonto = 1;
 
-const pontuar1_j1 = document.getElementById("pontuar1");
-const retirar1_j1 = document.getElementById("retirar1");
-const ponto1 =  document.getElementById("ponto1");
+function Logar(){
+  let input1 = document.getElementById("equipe1").value
+  let input2 = document.getElementById("equipe2").value
+  
+  equipe_1.innerHTML = equipe1
+  equipe_2.innerHTML = equipe2
+  pontos_equipe1.innerHTML = 0
+  pontos_equipe2.innerHTML = 0
+}
 
-pontuar1_j1.addEventListener("click", () => {
-    
-});
+function Pontuar_equipe1(){
+  if(pontos_equipe1 == 12){
+    document.getElementById("vencedor1").innerHTML = "Ganhoooooouuuu";
+  } else{
+    pontos_equipe1.innerHTML += valorPonto;
+  }
+}
 
-retirar1_j1.addEventListener("click",() => {
-    
-});
+function Pontuar_equipe2(){
+  if(pontos_equipe2 == 12){
+    document.getElementById("vencedor2").innerHTML = "Ganhoooooouuuu"
+  } else {
+    pontos_equipe2.innerHTML += valorPonto;
+  }
+}
 
+function Retirar_equipe1(){
+  pontos_equipe1.innerHTML -= 1;
+}
 
-const pontuar1_j2 =  document.getElementById("pontuar2");
-const retirar1_j2 =  document.getElementById("retirar2");
-const ponto2 = document.getElementById("ponto2");
+function Retirar_equipe2(){
+  pontos_equipe2.innerHTML -= 1;
+}
 
-pontuar1_j2.addEventListener("click", () => {
-    
-});
+let onpress_truco = false
 
-retirar1_j2.addEventListener("click", () => {
-    
-});
-
-
-
-
-
-
-
-
-
-
-
-
-//elemento.removeEventListener("evento", manipulador(função));
+function Trucar(){
+  onpress_truco = true
+  valorDoPonto = 0
+  
+  if(onpress_truco == true){
+    onpress_truco = false
+    valorDoPonto += 3
+    valorDoPonto.innerHTML 
+  }
+}

@@ -4,50 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="white" />
-    <link rel="stylesheet" href="css/estilo.css">
     <link rel="manifest" href="/manifest.json" />
     <link rel="apple-touch-icon" href="images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
+     <script type="text/javascript" src="js/main.js"></script>
     <title>Truco</title>
 </head>
-<body class="fullscreen">
+<body>
     <header>
-        <h1>Pontuador de Truco</h1>
+        <h1 className="titulo">Pontuador de Truco</h1>
     </header>
+    <div id="forms">
+      <input className="input" id="equipe1" type="text" placeholder="DIGITE O NOME DA PRIMEIRA EQUIPE/JOGADOR"/>
+      <input className="input" id="equipe2" type="text" placeholder="DIGITE O NOME DA SEGUNDA EQUIPE/JOGADOR"/>
+      <button onclick="Logar()">JOGAR</button>
+    </div>
+    
     <hr/>
+    
     <div class="container">
         <div class="grupos">
             <div class="grupo">
-            <h1 id="jogador1"></h1>
+            <h1 id="equipe_1"></h1>
+            <h1 id="vencedor1"></h1>
 
-            <h2 id="ponto1"> 0 </h2>
+            <h2 id="ponto_1"></h2>
             </div>
 
             <div class="grupo">
-                <h1 id="jogador2"></h1>
+                <h1 id="equipe_2"></h1>
 
-                <h2 id="ponto2"> 0 </h2>
+                <h2 id="ponto_2"></h2>
             </div>
         </div>
 
         <div class="controladores">
             <div class="controlador">
-                <button id="pontuar1">+1</button>
-                <button id="retirar1">-1</button>
+                <button className="pontuar" onclick="Ponto_equipe1()">+</button>
+                <button className="retirar" onclick="Retirar_equipe1()">-</button>
             </div>
         
             <div class="controlador">
-                <button id="pontuar2">+1</button>
-                <button id="retirar2">-1</button>
+                <button className="pontuar" onclick="Ponto_equipe2">+</button>
+                <button className="retirar" onclick="Retirar_equipe2">-</button>
             </div>
         </div>
 
         <div class="trucar">
-            <button id="truco">TRUCO <p id="txtTruco"></p></button>
+            <button onclick="Trucar()">Truco<p id="valorPonto"></p></button>
         </div>
-
-    </div>
-
-    <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
